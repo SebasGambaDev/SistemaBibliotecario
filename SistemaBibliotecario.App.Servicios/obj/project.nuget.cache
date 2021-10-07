@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "KJWPp8ldz25LJBVwnY2L18dKDHC9V6WqAZCymDEOD3Z2KOTjdRZS8oPgKchRxZ3NvopRxUQK7j+A7DX7FItraA==",
+  "success": true,
+  "projectFilePath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Servicios/SistemaBibliotecario.App.Servicios.csproj",
+  "expectedPackageFiles": [
+    "/Users/juansebastiangambajacomussi/.nuget/packages/microsoft.extensions.apidescription.server/3.0.0/microsoft.extensions.apidescription.server.3.0.0.nupkg.sha512",
+    "/Users/juansebastiangambajacomussi/.nuget/packages/microsoft.openapi/1.2.3/microsoft.openapi.1.2.3.nupkg.sha512",
+    "/Users/juansebastiangambajacomussi/.nuget/packages/swashbuckle.aspnetcore/5.6.3/swashbuckle.aspnetcore.5.6.3.nupkg.sha512",
+    "/Users/juansebastiangambajacomussi/.nuget/packages/swashbuckle.aspnetcore.swagger/5.6.3/swashbuckle.aspnetcore.swagger.5.6.3.nupkg.sha512",
+    "/Users/juansebastiangambajacomussi/.nuget/packages/swashbuckle.aspnetcore.swaggergen/5.6.3/swashbuckle.aspnetcore.swaggergen.5.6.3.nupkg.sha512",
+    "/Users/juansebastiangambajacomussi/.nuget/packages/swashbuckle.aspnetcore.swaggerui/5.6.3/swashbuckle.aspnetcore.swaggerui.5.6.3.nupkg.sha512"
+  ],
+  "logs": []
+}
