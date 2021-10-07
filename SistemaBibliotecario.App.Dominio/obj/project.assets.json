@@ -1,36 +1,35 @@
 {
   "version": 3,
   "targets": {
-    "net5.0": {}
+    ".NETStandard,Version=v2.1": {}
   },
   "libraries": {},
   "projectFileDependencyGroups": {
-    "net5.0": []
+    ".NETStandard,Version=v2.1": []
   },
   "packageFolders": {
-    "/Users/juansebastiangambajacomussi/.nuget/packages/": {}
+    "C:\\Users\\LAURA\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
+      "projectUniqueName": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
       "projectName": "SistemaBibliotecario.App.Dominio",
-      "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
-      "packagesPath": "/Users/juansebastiangambajacomussi/.nuget/packages/",
-      "outputPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/",
+      "projectPath": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
+      "packagesPath": "C:\\Users\\LAURA\\.nuget\\packages\\",
+      "outputPath": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "/Users/juansebastiangambajacomussi/.nuget/NuGet/NuGet.Config"
+        "C:\\Users\\LAURA\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
-        "net5.0"
+        "netstandard2.1"
       ],
       "sources": {
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
-        "net5.0": {
-          "targetAlias": "net5.0",
+        "netstandard2.1": {
           "projectReferences": {}
         }
       },
@@ -41,8 +40,7 @@
       }
     },
     "frameworks": {
-      "net5.0": {
-        "targetAlias": "net5.0",
+      "netstandard2.1": {
         "imports": [
           "net461",
           "net462",
@@ -54,11 +52,11 @@
         "assetTargetFallback": true,
         "warn": true,
         "frameworkReferences": {
-          "Microsoft.NETCore.App": {
+          "NETStandard.Library": {
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
       }
     }
   }

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "+YYSaHnne7V/Adde5pCSEDP1McWt2PJqTmwJc8OdM1fbabpazdCqbE3zKFGblbs+a9mZeOt9YH8TQ1b+CE5gTw==",
+  "dgSpecHash": "fch6d9yH7gpF288fQPjx/Rqmh8NukS9ZDwAbDqyI5KYjNgtjM29FF1CaJr6QPug0dzdAF2xr5HA390GDbUNaMw==",
   "success": true,
-  "projectFilePath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
+  "projectFilePath": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
