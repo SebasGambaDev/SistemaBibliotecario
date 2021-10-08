@@ -3,6 +3,8 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Usuario
     {
+      public int usu_id{get;set;}
+      
       public string usu_identificacion{get;set;}
       public string usu_nombre{get;set;}
       public string usu_apellido{get;set;}
