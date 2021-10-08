@@ -3,6 +3,7 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Libro
     {
+        public int lib_id{get;set;}
         public string lib_titulo{get;set;}
         public string lib_isbn{get;set;}
         public string lib_sinopsis{get;set;}
@@ -14,5 +15,6 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
         public Categoria_libro lib_catLibro{get;set;}
         public Idioma_libro lib_idioLibro{get;set;}
         public Editorial lib_edit{get;set;}
+        public Autor lib_aut{get;set;}
     }
 }
