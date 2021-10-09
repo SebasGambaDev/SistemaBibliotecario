@@ -3,7 +3,7 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Reserva
     {
-       public int reser_id{get;set;}
+       public int id{get;set;}
        
        public Usuario reser_usu{get;set;} 
        public Ejemplar reser_ejem{get;set;} 

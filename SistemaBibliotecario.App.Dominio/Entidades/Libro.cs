@@ -3,7 +3,7 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Libro
     {
-        public int lib_id{get;set;}
+        public int id{get;set;}
         public string lib_titulo{get;set;}
         public string lib_isbn{get;set;}
         public string lib_sinopsis{get;set;}

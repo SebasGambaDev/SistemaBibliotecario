@@ -3,7 +3,7 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Bibliotecario
     {
-        public int bib_id{get;set;}
+        public int id{get;set;}
         public string bib_identificacion{get;set;}
         public string bib_nombre{get;set;}
         public string bib_apellido{get;set;}
