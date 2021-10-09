@@ -8,6 +8,6 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
         public string ejem_scdd{get;set;}
 
         public Libro ejem_lib{get;set;}
-        public Estado_ejemplar ejem_estEjem{get;set;}
+        public EstadoEjemplar ejem_estEjem{get;set;}
     }
 }

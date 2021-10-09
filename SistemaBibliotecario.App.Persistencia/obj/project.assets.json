@@ -2068,6 +2068,16 @@
         "runtime": {
           "lib/netstandard1.3/System.Xml.XmlSerializer.dll": {}
         }
+      },
+      "SistemaBibliotecario.App.Dominio/1.0.0": {
+        "type": "project",
+        "framework": ".NETStandard,Version=v2.1",
+        "compile": {
+          "bin/placeholder/SistemaBibliotecario.App.Dominio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaBibliotecario.App.Dominio.dll": {}
+        }
       }
     }
   },
@@ -7236,6 +7246,11 @@
         "system.xml.xmlserializer.4.3.0.nupkg.sha512",
         "system.xml.xmlserializer.nuspec"
       ]
+    },
+    "SistemaBibliotecario.App.Dominio/1.0.0": {
+      "type": "project",
+      "path": "../SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
+      "msbuildProject": "../SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -7243,7 +7258,8 @@
       "Microsoft.EntityFrameworkCore >= 5.0.0",
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "Microsoft.EntityFrameworkCore.SqlServer >= 5.0.0",
-      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0"
+      "Microsoft.EntityFrameworkCore.Tools >= 5.0.0",
+      "SistemaBibliotecario.App.Dominio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -7270,7 +7286,11 @@
       "frameworks": {
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj": {
+              "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj"
+            }
+          }
         }
       },
       "warningProperties": {

@@ -10,6 +10,6 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
         public string bib_email{get;set;}
         public string bib_telefono{get;set;}
 
-        public Turno_bibliotecario bib_turnBib{get;set;}
+        public TurnoBibliotecario bib_turnBib{get;set;}
     }
 }
