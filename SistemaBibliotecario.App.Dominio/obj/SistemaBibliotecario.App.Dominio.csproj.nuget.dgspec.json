@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj": {}
+    "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj": {}
   },
   "projects": {
-    "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj": {
+    "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
+        "projectUniqueName": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
         "projectName": "SistemaBibliotecario.App.Dominio",
-        "projectPath": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
-        "packagesPath": "C:\\Users\\LAURA\\.nuget\\packages\\",
-        "outputPath": "C:\\proyectos_ciclo3\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\obj\\",
+        "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
+        "packagesPath": "/Users/juansebastiangambajacomussi/.nuget/packages/",
+        "outputPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\LAURA\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/juansebastiangambajacomussi/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netstandard2.1"
@@ -24,6 +24,7 @@
         },
         "frameworks": {
           "netstandard2.1": {
+            "targetAlias": "netstandard2.1",
             "projectReferences": {}
           }
         },
@@ -35,6 +36,7 @@
       },
       "frameworks": {
         "netstandard2.1": {
+          "targetAlias": "netstandard2.1",
           "imports": [
             "net461",
             "net462",
@@ -50,7 +52,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.413\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
         }
       }
     }
