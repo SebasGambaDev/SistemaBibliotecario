@@ -1,4 +1,5 @@
 using System;
+
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
     public class Usuario

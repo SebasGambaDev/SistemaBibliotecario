@@ -1,7 +1,12 @@
 <Project Sdk="Microsoft.NET.Sdk.Web">
 
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaBibliotecario.App.Dominio\SistemaBibliotecario.App.Dominio.csproj" />
+    <ProjectReference Include="..\SistemaBibliotecario.App.Persistencia\SistemaBibliotecario.App.Persistencia.csproj" />
+  </ItemGroup>
+
   <PropertyGroup>
-    <TargetFramework>netstandard2.1</TargetFramework>
+    <TargetFramework>net5.0</TargetFramework>
   </PropertyGroup>
 
 </Project>
