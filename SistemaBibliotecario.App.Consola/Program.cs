@@ -1,4 +1,5 @@
 ﻿using System;
+using SistemaBibliotecario.App.Dominio;
 
 namespace SistemaBibliotecario.App.Consola
 {
