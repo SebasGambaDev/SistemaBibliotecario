@@ -72,3 +72,4 @@
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/bin/Debug/net5.0/SistemaBibliotecario.App.Persistencia.pdb
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Usuarios/Details.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Usuarios/Edit.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Usuarios/Delete.cshtml.g.cs
