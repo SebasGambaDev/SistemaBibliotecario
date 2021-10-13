@@ -1,0 +1,44 @@
+﻿@page
+@model SistemaBibliotecario.App.Presentacion.Pages.EditModel
+@{
+    int usuarioId = Model.usuario.id;
+}
+
+<h2>Edición de datos del usuario @Model.usuario.usu_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="usuario.id" />    
+    <div class="form-group">
+        <label asp-for="usuario.usu_identificacion"></label>
+        <input asp-for="usuario.usu_identificacion" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_identificacion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="usuario.usu_nombre"></label>
+        <input asp-for="usuario.usu_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="usuario.usu_apellido"></label>
+        <input asp-for="usuario.usu_apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="usuario.usu_telefono"></label>
+        <input asp-for="usuario.usu_telefono" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="usuario.usu_email"></label>
+        <input asp-for="usuario.usu_email" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_email"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="usuario.usu_direccion"></label>
+        <input asp-for="usuario.usu_direccion" class="form-control">
+        <span class="text-danger" asp-validation-for="usuario.usu_direccion"></span>
+    </div>
+
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./List" class="btn-default">Volver a la Lista de usuarios... </a>
