@@ -1,3 +1,5 @@
+using System.Runtime.Serialization;
+using System.Net.Security;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -8,6 +10,8 @@ using Microsoft.AspNetCore.HttpsPolicy;
 using Microsoft.Extensions.Configuration;
 using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
+using SistemaBibliotecario.App.Persistencia.AppRepositorios;
+using Microsoft.EntityFrameworkCore;
 
 namespace SistemaBibliotecario.App.Presentacion
 {
@@ -24,6 +28,9 @@ namespace SistemaBibliotecario.App.Presentacion
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddRazorPages();
+            services.AddTransient<IRepositorioUsuario, RepositorioUsuario>();
+            services.AddDbContext<SistemaBibliotecario.App.Persistencia.AppContext>();
+            
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
