@@ -1,0 +1,30 @@
+﻿@page
+@model SistemaBibliotecario.App.Presentacion.Pages.DetailsModel
+@{
+}
+
+<h2>Datos Detallados del usuario @Model.usuario.usu_nombre</h2>
+<div>
+    Identificación: @Model.usuario.id
+</div>
+<div>
+    Identificación: @Model.usuario.usu_identificacion
+</div>
+<div>
+    Nombres: @Model.usuario.usu_nombre
+</div>
+<div>
+    Apellidos: @Model.usuario.usu_apellido
+</div>
+<div>
+    Telefono: @Model.usuario.usu_telefono
+</div>
+<div>
+    E-mail: @Model.usuario.usu_email
+</div>
+<div>
+    Dirección: @Model.usuario.usu_direccion
+</div>
+<a asp-page="./List" class="btn-default">Volver a la Lista de Formadores.. </a>
+
+
