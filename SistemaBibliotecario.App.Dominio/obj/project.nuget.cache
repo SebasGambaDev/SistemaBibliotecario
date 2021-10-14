@@ -1,8 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "OpM/C4Ghqe30XoOWS8nGM9atbA5v7LSsRHtseU1iPXMNzQlX8rWZyx0goSUTq8cCGLwugEL2JvOoPy5uzWaPcA==",
+  "dgSpecHash": "Rgrnp9OEEIkfgDiPZXBGvSWgRDpVWmkcf14/Gq8h5mJxxj/zafyAcLagoITZPv0OGMnJQb+VgKjPNINa3SAJZQ==",
   "success": true,
   "projectFilePath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/Users/juansebastiangambajacomussi/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
   "logs": []
 }
