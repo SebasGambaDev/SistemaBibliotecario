@@ -12,24 +12,24 @@ using SistemaBibliotecario.App.Dominio.Entidades;
 using SistemaBibliotecario.App.Persistencia.AppRepositorios;
 using SistemaBibliotecario.App.Persistencia;
 
-namespace SistemaBibliotecario.App.Presentacion.Pages
+namespace SitemaBibliotecario.App.Presentacion.Pages
 {
-    public class ListTurnBibModel : PageModel
+    public class ListAutoresModel : PageModel
     {
-        private readonly IRepositorioTurno repositorioTurnos;
+        private readonly IRepositorioAutor repositorioAutores;
 
-        public IEnumerable<TurnoBibliotecario> turnos {get;set;}
+        public IEnumerable<Autor> autores {get;set;}
 
         public string searchString;
         
-        public ListTurnBibModel(IRepositorioTurno repositorioTurnos)
+        public ListAutoresModel(IRepositorioAutor repositorioAutores)
         {
-            this.repositorioTurnos=repositorioTurnos;
+            this.repositorioAutores=repositorioAutores;
         }
 
         public void OnGet()
         {
-            turnos = repositorioTurnos.GetAllTurnos(searchString);
+            autores = repositorioAutores.GetAllAutores(searchString);
         }
 
         public IActionResult OnPost(string? searchString)
@@ -38,8 +38,9 @@ namespace SistemaBibliotecario.App.Presentacion.Pages
             {
                 return Page();
             }
-            turnos = repositorioTurnos.GetAllTurnos(searchString);
+            autores = repositorioAutores.GetAllAutores(searchString);
             return Page();
         }
+        
     }
 }

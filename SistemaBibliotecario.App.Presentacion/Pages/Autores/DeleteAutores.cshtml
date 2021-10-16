@@ -1,0 +1,20 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.DeleteAutoresModel
+@{
+}
+<h2>Eliminar autor @Model.autor.aut_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="autor.id" />
+    <div class="form-group">
+        Id en base de datos: @Model.autor.id
+    </div>
+   
+    <div class="form-group">
+        Nombres: @Model.autor.aut_nombre
+    </div>
+    
+    
+    <button type="submit" class="btn btn-success">Eliminar</button>    
+</form>
+
+<a asp-page="./List" class="btn-default">Volver a la Lista de autores... </a>

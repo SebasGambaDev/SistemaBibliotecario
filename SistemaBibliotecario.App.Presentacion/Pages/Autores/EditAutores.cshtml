@@ -1,0 +1,19 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.EditAutoresModel
+@{
+}
+
+<h2>Creacion o actualización del autor @Model.autor.aut_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="autor.id" />    
+    
+    <div class="form-group">
+        <label asp-for="autor.aut_nombre"></label>
+        <input asp-for="autor.aut_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="autor.aut_nombre"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListAutores" class="btn-default">Volver a la Lista de autores... </a>
