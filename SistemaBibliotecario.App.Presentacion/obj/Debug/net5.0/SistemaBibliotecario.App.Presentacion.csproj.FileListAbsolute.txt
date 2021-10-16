@@ -91,3 +91,7 @@
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/CategoriasLibro/DeleteCategoriasLibro.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/CategoriasLibro/EditCategoriasLibro.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/CategoriasLibro/ListCategoriasLibro.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Libros/DeleteLibros.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Libros/DetailsLibros.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Libros/EditLibros.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Libros/ListLibros.cshtml.g.cs

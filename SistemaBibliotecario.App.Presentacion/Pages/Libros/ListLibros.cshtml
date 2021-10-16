@@ -1,0 +1,46 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.ListLibrosModel
+@{
+}
+
+
+<h1>Listado de libros en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./ListLibros")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    @foreach (var libro in Model.libros)
+    {
+        <tr>
+            <td>@libro.id</td>
+            <td>@libro.lib_titulo</td>
+            <td>@libro.lib_isbn</td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./DetailsLibros" asp-route-libroId="@libro.id">
+                  <i class="fas fa-info-circle fa-lg"></i>Detalle 
+                </a>
+            </td>
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditLibros" asp-route-libroId="@libro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
+            </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./DeleteLibros" asp-route-libroId="@libro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>  
+        </tr>
+    }
+</table>
+
+<a asp-page=".\EditLibros" class="btn btn-primary">Agregar nuevo libro</a>

@@ -1,0 +1,42 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.DetailsLibrosModel
+@{
+}
+
+<h2>Datos Detallados del libro @Model.libro.lib_titulo</h2>
+<div>
+    Id en base de datos: @Model.libro.id
+</div>
+<div>
+    Titulo: @Model.libro.lib_titulo
+</div>
+<div>
+    ISBN: @Model.libro.lib_isbn
+</div>
+<div>
+    Sinopsis: @Model.libro.lib_sinopsis
+</div>
+<div>
+    Numero de capitulos: @Model.libro.lib_numCapt
+</div>
+<div>
+    Numero de páginas: @Model.libro.lib_numPag
+</div>
+<div>
+    Tipo de libro: @Model.libro.lib_tipoLibroid
+</div>
+<div>
+    Idioma: @Model.libro.lib_idioLibroid
+</div>
+<div>
+    Categoria: @Model.libro.lib_catLibroid
+</div>
+<div>
+    Autor: @Model.libro.lib_autid
+</div>
+<div>
+    Editorial: @Model.libro.lib_editid
+</div>
+
+<a asp-page="./ListLibros" class="btn-default">Volver a la Lista de libros... </a>
+

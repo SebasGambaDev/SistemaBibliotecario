@@ -1,0 +1,135 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.EditLibrosModel
+@{
+    int libroId = Model.libro.id;
+    int autorId = Model.libro.lib_autid;
+    int editorialId = Model.libro.lib_editid;
+    int categoriaLibroId = Model.libro.lib_catLibroid;
+    int tipoLibroId = Model.libro.lib_tipoLibroid;
+    int IdiomaLibroId = Model.libro.lib_idioLibroid;
+}
+
+<h2>Edición de los datos del libro @Model.libro.lib_titulo</h2>
+<form method="post">
+    <input type="hidden" asp-for="libro.id" />
+    <div class="form-group">
+        <label asp-for="libro.lib_titulo"></label>
+        <input asp-for="libro.lib_titulo" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_titulo"></span>
+    </div>  
+      
+    <div class="form-group">
+        <label asp-for="libro.lib_isbn"></label>
+        <input asp-for="libro.lib_isbn" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_isbn"></span>
+    </div> 
+      
+    <div class="form-group">
+        <label asp-for="libro.lib_sinopsis"></label>
+        <input asp-for="libro.lib_sinopsis" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_sinopsis"></span>
+    </div> 
+      
+    <div class="form-group">
+        <label asp-for="libro.lib_numCapt"></label>
+        <input asp-for="libro.lib_numCapt" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_numCapt"></span>
+    </div> 
+
+    <div class="form-group">
+        <label asp-for="libro.lib_numPag"></label>
+        <input asp-for="libro.lib_numPag" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_numPag"></span>
+    </div>
+
+    <div class="form-group">
+        <label asp-for="libro.lib_fechaPub"></label>
+        <input asp-for="libro.lib_fechaPub" class="form-control">
+        <span class="text-danger" asp-validation-for="libro.lib_fechaPub"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="libro.lib_tipoLibroid"></label>
+        <select class="form-select" name="libro.lib_tipoLibroid">
+            <option selected  value=0>Seleccion Tipo</option>
+            @foreach(var elemento in Model.tiposLibro){
+               if (elemento.id == tipoLibroId) {
+                  <option value="@elemento.id" selected> @elemento.tipoLibro_nombre @elemento.id</option> 
+                }
+               else {
+                  <option value="@elemento.id"> @elemento.tipoLibro_nombre @elemento.id </option>
+               }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="libro.lib_tipoLibroid"></span>
+    </div> 
+
+    <div class="form-group">
+        <label asp-for="libro.lib_idioLibroid"></label>
+        <select class="form-select" name="libro.lib_idioLibroid">
+            <option selected  value=0>Seleccion Idioma</option>
+            @foreach(var elemento in Model.idiomasLibro){
+               if (elemento.id == IdiomaLibroId) {
+                  <option value="@elemento.id" selected> @elemento.idiomaLibro_nombre @elemento.id </option> 
+                }
+               else {
+                  <option value="@elemento.id"> @elemento.idiomaLibro_nombre @elemento.id </option>
+               }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="libro.lib_idioLibroid"></span>
+    </div> 
+
+    <div class="form-group">
+        <label asp-for="libro.lib_catLibroid"></label>
+        <select class="form-select" name="libro.lib_catLibroid">
+            <option selected  value=0>Seleccion categoria</option>
+            @foreach(var elemento in Model.categoriasLibro){
+               if (elemento.id == categoriaLibroId) {
+                  <option value="@elemento.id" selected> @elemento.catLibro_nombre @elemento.id </option> 
+                }
+               else {
+                  <option value="@elemento.id"> @elemento.catLibro_nombre @elemento.id </option>
+               }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="libro.lib_catLibroid"></span>
+    </div> 
+      
+    <div class="form-group">
+        <label asp-for="libro.lib_autid"></label>
+        <select class="form-select" name="libro.lib_autid">
+            <option selected  value=0>Seleccion Autor</option>
+            @foreach(var elemento in Model.autores){
+               if (elemento.id == autorId) {
+                  <option value="@elemento.id" selected> @elemento.aut_nombre @elemento.id </option> 
+                }
+               else {
+                  <option value="@elemento.id"> @elemento.aut_nombre @elemento.id </option>
+               }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="libro.lib_autid"></span>
+    </div> 
+      
+    <div class="form-group">
+        <label asp-for="libro.lib_editid"></label>
+        <select class="form-select"  name="libro.lib_editid">
+            <option selected  value=0>Seleccion Editorial</option>
+            @foreach(var elemento in Model.editoriales){
+               if (elemento.id == editorialId) {
+                  <option value="@elemento.id" selected> @elemento.edit_nombre @elemento.id </option> 
+                }
+               else {
+                   <option value="@elemento.id"> @elemento.edit_nombre @elemento.id </option>
+                }
+            }
+        </select>
+        <span class="text-danger" asp-validation-for="libro.lib_editid"></span>
+    </div> 
+
+    
+    <button type="submit" class="btn btn-success">Grabar</button>    
+</form>
+
+<a asp-page="./ListLibros" class="btn-default">Regresar a la lista de libros </a>

@@ -31,6 +31,7 @@ namespace SistemaBibliotecario.App.Presentacion
             services.AddRazorPages();
             services.AddTransient<IRepositorioUsuario, RepositorioUsuario>();
             services.AddTransient<IRepositorioAutor, RepositorioAutor>();
+            services.AddTransient<IRepositorioLibro, RepositorioLibro>();
             services.AddTransient<IRepositorioIdiomaLibro, RepositorioIdiomaLibro>();
             services.AddTransient<IRepositorioTipoLibro, RepositorioTipoLibro>();
             services.AddTransient<IRepositorioCategoriaLibro, RepositorioCategoriaLibro>();
