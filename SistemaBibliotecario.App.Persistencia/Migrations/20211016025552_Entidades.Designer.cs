@@ -10,8 +10,8 @@ using SistemaBibliotecario.App.Persistencia;
 namespace SistemaBibliotecario.App.Persistencia.Migrations
 {
     [DbContext(typeof(AppContext))]
-    [Migration("20211013003048_entidades")]
-    partial class entidades
+    [Migration("20211016025552_Entidades")]
+    partial class Entidades
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -58,12 +58,29 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                     b.Property<string>("bib_telefono")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("bib_turnBib")
+                    b.Property<int?>("bib_turnBibid")
                         .HasColumnType("int");
 
                     b.HasKey("id");
 
+                    b.HasIndex("bib_turnBibid");
+
                     b.ToTable("Bibliotecarios");
+                });
+
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.CategoriaLibro", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("catLibro_nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("CategoriasLibro");
                 });
 
             modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Editorial", b =>
@@ -88,7 +105,7 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                         .HasColumnType("int")
                         .UseIdentityColumn();
 
-                    b.Property<int>("ejem_estEjem")
+                    b.Property<int?>("ejem_estEjemid")
                         .HasColumnType("int");
 
                     b.Property<int?>("ejem_libid")
@@ -99,9 +116,41 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
 
                     b.HasKey("id");
 
+                    b.HasIndex("ejem_estEjemid");
+
                     b.HasIndex("ejem_libid");
 
                     b.ToTable("Ejemplares");
+                });
+
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.EstadoEjemplar", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("estadoEjemplar_nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("EstadosEjemplar");
+                });
+
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.IdiomaLibro", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("idiomaLibro_nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("IdiomasLibro");
                 });
 
             modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Libro", b =>
@@ -114,7 +163,7 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                     b.Property<int?>("lib_autid")
                         .HasColumnType("int");
 
-                    b.Property<int>("lib_catLibro")
+                    b.Property<int?>("lib_catLibroid")
                         .HasColumnType("int");
 
                     b.Property<int?>("lib_editid")
@@ -123,7 +172,7 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                     b.Property<DateTime>("lib_fechaPub")
                         .HasColumnType("datetime2");
 
-                    b.Property<int>("lib_idioLibro")
+                    b.Property<int?>("lib_idioLibroid")
                         .HasColumnType("int");
 
                     b.Property<string>("lib_isbn")
@@ -138,7 +187,7 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                     b.Property<string>("lib_sinopsis")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("lib_tipoLibro")
+                    b.Property<int?>("lib_tipoLibroid")
                         .HasColumnType("int");
 
                     b.Property<string>("lib_titulo")
@@ -148,7 +197,13 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
 
                     b.HasIndex("lib_autid");
 
+                    b.HasIndex("lib_catLibroid");
+
                     b.HasIndex("lib_editid");
+
+                    b.HasIndex("lib_idioLibroid");
+
+                    b.HasIndex("lib_tipoLibroid");
 
                     b.ToTable("Libros");
                 });
@@ -192,6 +247,36 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                     b.ToTable("Reservas");
                 });
 
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.TipoLibro", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("tipoLibro_nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("TiposLibro");
+                });
+
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.TurnoBibliotecario", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int")
+                        .UseIdentityColumn();
+
+                    b.Property<string>("turn_nombre")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("id");
+
+                    b.ToTable("TurnosBibliotecario");
+                });
+
             modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Usuario", b =>
                 {
                     b.Property<int>("id")
@@ -200,33 +285,60 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                         .UseIdentityColumn();
 
                     b.Property<string>("usu_apellido")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("usu_direccion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("usu_email")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("usu_identificacion")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("usu_nombre")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.Property<string>("usu_telefono")
-                        .HasColumnType("nvarchar(max)");
+                        .IsRequired()
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
 
                     b.HasKey("id");
 
                     b.ToTable("Usuarios");
                 });
 
+            modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Bibliotecario", b =>
+                {
+                    b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.TurnoBibliotecario", "bib_turnBib")
+                        .WithMany()
+                        .HasForeignKey("bib_turnBibid");
+
+                    b.Navigation("bib_turnBib");
+                });
+
             modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Ejemplar", b =>
                 {
+                    b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.EstadoEjemplar", "ejem_estEjem")
+                        .WithMany()
+                        .HasForeignKey("ejem_estEjemid");
+
                     b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.Libro", "ejem_lib")
                         .WithMany()
                         .HasForeignKey("ejem_libid");
+
+                    b.Navigation("ejem_estEjem");
 
                     b.Navigation("ejem_lib");
                 });
@@ -237,13 +349,31 @@ namespace SistemaBibliotecario.App.Persistencia.Migrations
                         .WithMany()
                         .HasForeignKey("lib_autid");
 
+                    b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.CategoriaLibro", "lib_catLibro")
+                        .WithMany()
+                        .HasForeignKey("lib_catLibroid");
+
                     b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.Editorial", "lib_edit")
                         .WithMany()
                         .HasForeignKey("lib_editid");
 
+                    b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.IdiomaLibro", "lib_idioLibro")
+                        .WithMany()
+                        .HasForeignKey("lib_idioLibroid");
+
+                    b.HasOne("SistemaBibliotecario.App.Dominio.Entidades.TipoLibro", "lib_tipoLibro")
+                        .WithMany()
+                        .HasForeignKey("lib_tipoLibroid");
+
                     b.Navigation("lib_aut");
 
+                    b.Navigation("lib_catLibro");
+
                     b.Navigation("lib_edit");
+
+                    b.Navigation("lib_idioLibro");
+
+                    b.Navigation("lib_tipoLibro");
                 });
 
             modelBuilder.Entity("SistemaBibliotecario.App.Dominio.Entidades.Reserva", b =>

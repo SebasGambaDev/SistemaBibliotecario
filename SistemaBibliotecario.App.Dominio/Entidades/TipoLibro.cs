@@ -1,8 +1,9 @@
 using System;
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
-    public enum TipoLibro
+    public class TipoLibro
     {
-       DePapel, Ebook, Otro
+        public  int id {get;set;}
+        public string tipoLibro_nombre {get;set;}
     }
 }

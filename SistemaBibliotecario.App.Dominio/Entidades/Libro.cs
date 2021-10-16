@@ -11,10 +11,10 @@ namespace SistemaBibliotecario.App.Dominio.Entidades
         public int lib_numPag{get;set;}
         public DateTime lib_fechaPub{get;set;}
 
-        public TipoLibro lib_tipoLibro{get;set;}
-        public CategoriaLibro lib_catLibro{get;set;}
-        public IdiomaLibro lib_idioLibro{get;set;}
-        public Editorial lib_edit{get;set;}
-        public Autor lib_aut{get;set;}
+        public int lib_tipoLibro{get;set;}
+        public int lib_catLibro{get;set;}
+        public int lib_idioLibro{get;set;}
+        public int lib_edit{get;set;}
+        public int lib_aut{get;set;}
     }
 }

@@ -1,8 +1,11 @@
 using System;
+
+
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
-    public enum TurnoBibliotecario
+    public class TurnoBibliotecario
     {
-        Mañana, Tarde, Noche
+        public  int id {get;set;}
+        public string turn_nombre {get;set;}   
     }
 }

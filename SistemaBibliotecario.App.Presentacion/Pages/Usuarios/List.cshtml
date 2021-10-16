@@ -5,6 +5,18 @@
 }
 
 <h1>Listado de usuarios en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./List")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
 <table class="table">
     @foreach (var usuario in Model.usuarios)
     {

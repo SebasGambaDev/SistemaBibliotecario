@@ -1,8 +1,9 @@
 using System;
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
-    public enum IdiomaLibro
+    public class IdiomaLibro
     {
-       Español, Ingles, Otro
+        public  int id {get;set;}
+        public string idiomaLibro_nombre {get;set;}
     }
 }

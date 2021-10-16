@@ -1,0 +1,39 @@
+﻿@page
+@model SistemaBibliotecario.App.Presentacion.Pages.ListTurnBibModel
+@{
+}
+<h1>Listado de turnos en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./List")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    @foreach (var turno in Model.turnos)
+    {
+        <tr>
+            <td>@turno.id</td>
+            <td>@turno.turn_nombre</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditTurnBib" asp-route-turnoId="@turno.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
+            </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./DeleteTurnBib" asp-route-turnoId="@turno.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>  
+        </tr>
+    }
+</table>
+
+<a asp-page=".\EditTurnBib" class="btn btn-primary">Agregar nuevo turno</a>

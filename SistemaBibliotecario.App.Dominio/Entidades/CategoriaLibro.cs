@@ -1,8 +1,9 @@
 using System;
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
-    public enum CategoriaLibro
+    public class CategoriaLibro
     {
-        Científicos, LiteraturaYLingüísticos, DeViaje, Biografías, LibroDeTexto, LibrosDeGranFormato, DeReferenciaOConsulta, Monografías, Recreativos, Poéticos, Juveniles, Ficción, Otros
+        public  int id {get;set;}
+        public string catLibro_nombre {get;set;}
     }
 }

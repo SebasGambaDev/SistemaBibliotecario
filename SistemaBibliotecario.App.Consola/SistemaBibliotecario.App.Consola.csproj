@@ -3,6 +3,7 @@
   <ItemGroup>
     <ProjectReference Include="..\SistemaBibliotecario.App.Dominio\SistemaBibliotecario.App.Dominio.csproj" />
     <ProjectReference Include="..\SistemaBibliotecario.App.Persistencia\SistemaBibliotecario.App.Persistencia.csproj" />
+    <ProjectReference Include="..\SistemaBibliotecario.App.Presentacion\SistemaBibliotecario.App.Presentacion.csproj" />
   </ItemGroup>
 
   <ItemGroup>

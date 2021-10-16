@@ -1,0 +1,43 @@
+﻿@page
+@model SistemaBibliotecario.App.Presentacion.EditBibliotecariosModel
+
+@{
+    int bibliotecarioId = Model.bibliotecario.id;
+}
+
+<h2>Creacion o actualización del bibliotecario @Model.bibliotecario.bib_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="bibliotecario.id" />    
+    <div class="form-group">
+        <label asp-for="bibliotecario.bib_identificacion"></label>
+        <input asp-for="bibliotecario.bib_identificacion" class="form-control">
+        <span class="text-danger" asp-validation-for="bibliotecario.bib_identificacion"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="bibliotecario.bib_nombre"></label>
+        <input asp-for="bibliotecario.bib_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="bibliotecario.bib_nombre"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="bibliotecario.bib_apellido"></label>
+        <input asp-for="bibliotecario.bib_apellido" class="form-control">
+        <span class="text-danger" asp-validation-for="bibliotecario.bib_apellido"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="bibliotecario.bib_telefono"></label>
+        <input asp-for="bibliotecario.bib_telefono" class="form-control" type="tel">
+        <span class="text-danger" asp-validation-for="bibliotecario.bib_telefono"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="bibliotecario.bib_email"></label>
+        <input asp-for="bibliotecario.bib_email" class="form-control" type="email">
+        <span class="text-danger" asp-validation-for="bibliotecario.bib_email"></span>
+    </div>
+   
+       
+    
+   
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListBibliotecarios" class="btn-default">Volver a la Lista de bibliotecarios... </a>

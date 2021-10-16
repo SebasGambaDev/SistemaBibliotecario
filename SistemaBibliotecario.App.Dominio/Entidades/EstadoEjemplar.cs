@@ -1,8 +1,9 @@
 using System;
 namespace SistemaBibliotecario.App.Dominio.Entidades
 {
-    public enum EstadoEjemplar
+    public class EstadoEjemplar
     {
-        Disponible, Reservado
+        public  int id {get;set;}
+        public string estadoEjemplar_nombre {get;set;}
     }
 }

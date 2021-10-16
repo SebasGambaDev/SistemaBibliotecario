@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using SistemaBibliotecario.App.Dominio.Entidades;
 using SistemaBibliotecario.App.Persistencia.AppRepositorios;
+using SistemaBibliotecario.App.Persistencia;
 
 namespace SistemaBibliotecario.App.Presentacion.Pages
 {
@@ -43,6 +44,8 @@ namespace SistemaBibliotecario.App.Presentacion.Pages
         private readonly IRepositorioUsuario repositorioUsuarios;
 
         public IEnumerable<Usuario> usuarios {get;set;}
+
+        public string searchString;
         
         public ListModel(IRepositorioUsuario repositorioUsuarios)
         {
@@ -51,7 +54,17 @@ namespace SistemaBibliotecario.App.Presentacion.Pages
 
         public void OnGet()
         {
-            usuarios = repositorioUsuarios.GetAllUsuarios();
+            usuarios = repositorioUsuarios.GetAllUsuarios(searchString);
+        }
+
+        public IActionResult OnPost(string? searchString)
+        {
+            if(!ModelState.IsValid)
+            {
+                return Page();
+            }
+            usuarios = repositorioUsuarios.GetAllUsuarios(searchString);
+            return Page();
         }
     }
 }

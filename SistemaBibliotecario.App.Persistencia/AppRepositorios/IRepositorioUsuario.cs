@@ -8,7 +8,7 @@ namespace SistemaBibliotecario.App.Persistencia.AppRepositorios
 {
     public interface IRepositorioUsuario
     {
-        IEnumerable<Usuario> GetAllUsuarios();
+        IEnumerable<Usuario> GetAllUsuarios(string? nombre);
         Usuario AddUsuario(Usuario usuario);
         Usuario UpdateUsuario(Usuario usuario);
         void DeleteUsuario(int id);

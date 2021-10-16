@@ -1,0 +1,19 @@
+﻿@page
+@model SistemaBibliotecario.App.Presentacion.Pages.EditTurnBibModel
+@{
+}
+
+<h2>Creacion o actualización del turno @Model.turno.turn_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="turno.id" />    
+    
+    <div class="form-group">
+        <label asp-for="turno.turn_nombre"></label>
+        <input asp-for="turno.turn_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="turno.turn_nombre"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListTurnBib" class="btn-default">Volver a la Lista de turnos... </a>

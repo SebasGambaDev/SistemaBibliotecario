@@ -9,10 +9,15 @@ namespace SistemaBibliotecario.App.Persistencia
     {
         public DbSet<Autor> Autores { get; set; }
         public DbSet<Bibliotecario> Bibliotecarios { get; set; }
+        public DbSet<CategoriaLibro> CategoriasLibro { get; set; }
         public DbSet<Editorial> Editoriales { get; set; }
         public DbSet<Ejemplar> Ejemplares { get; set; }
+        public DbSet<EstadoEjemplar> EstadosEjemplar { get; set; }
+        public DbSet<IdiomaLibro> IdiomasLibro { get; set; }
         public DbSet<Libro> Libros { get; set; }
         public DbSet<Reserva> Reservas { get; set; }
+        public DbSet<TipoLibro> TiposLibro { get; set; }
+        public DbSet<TurnoBibliotecario> TurnosBibliotecario { get; set; }
         public DbSet<Usuario> Usuarios { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {

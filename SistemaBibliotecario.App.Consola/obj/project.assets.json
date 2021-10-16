@@ -1511,6 +1511,9 @@
       "SistemaBibliotecario.App.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETStandard,Version=v2.1",
+        "dependencies": {
+          "System.ComponentModel.Annotations": "5.0.0"
+        },
         "compile": {
           "bin/placeholder/SistemaBibliotecario.App.Dominio.dll": {}
         },
@@ -1532,6 +1535,23 @@
         "runtime": {
           "bin/placeholder/SistemaBibliotecario.App.Persistencia.dll": {}
         }
+      },
+      "SistemaBibliotecario.App.Presentacion/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v5.0",
+        "dependencies": {
+          "SistemaBibliotecario.App.Dominio": "1.0.0",
+          "SistemaBibliotecario.App.Persistencia": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/SistemaBibliotecario.App.Presentacion.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/SistemaBibliotecario.App.Presentacion.dll": {}
+        },
+        "frameworkReferences": [
+          "Microsoft.AspNetCore.App"
+        ]
       }
     }
   },
@@ -5786,13 +5806,19 @@
       "type": "project",
       "path": "../SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj",
       "msbuildProject": "../SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj"
+    },
+    "SistemaBibliotecario.App.Presentacion/1.0.0": {
+      "type": "project",
+      "path": "../SistemaBibliotecario.App.Presentacion/SistemaBibliotecario.App.Presentacion.csproj",
+      "msbuildProject": "../SistemaBibliotecario.App.Presentacion/SistemaBibliotecario.App.Presentacion.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net5.0": [
       "Microsoft.EntityFrameworkCore.Design >= 5.0.0",
       "SistemaBibliotecario.App.Dominio >= 1.0.0",
-      "SistemaBibliotecario.App.Persistencia >= 1.0.0"
+      "SistemaBibliotecario.App.Persistencia >= 1.0.0",
+      "SistemaBibliotecario.App.Presentacion >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -5825,6 +5851,9 @@
             },
             "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj": {
               "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj"
+            },
+            "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/SistemaBibliotecario.App.Presentacion.csproj": {
+              "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/SistemaBibliotecario.App.Presentacion.csproj"
             }
           }
         }

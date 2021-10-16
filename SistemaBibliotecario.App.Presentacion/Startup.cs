@@ -27,8 +27,11 @@ namespace SistemaBibliotecario.App.Presentacion
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+            
             services.AddRazorPages();
             services.AddTransient<IRepositorioUsuario, RepositorioUsuario>();
+            services.AddTransient<IRepositorioBibliotecario, RepositorioBibliotecario>();
+            services.AddTransient<IRepositorioTurno, RepositorioTurno>();
             services.AddDbContext<SistemaBibliotecario.App.Persistencia.AppContext>();
             
         }
