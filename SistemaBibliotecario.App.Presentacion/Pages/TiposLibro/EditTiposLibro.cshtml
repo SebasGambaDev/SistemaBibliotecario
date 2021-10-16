@@ -1,0 +1,19 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.EditTiposLibroModel
+@{
+}
+
+<h2>Creacion o actualización del idioma de libro @Model.tipoLibro.tipoLibro_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="tipoLibro.id" />    
+    
+    <div class="form-group">
+        <label asp-for="tipoLibro.tipoLibro_nombre"></label>
+        <input asp-for="tipoLibro.tipoLibro_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="tipoLibro.tipoLibro_nombre"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListTiposLibro" class="btn-default">Volver a la Lista de tipos de libro... </a>

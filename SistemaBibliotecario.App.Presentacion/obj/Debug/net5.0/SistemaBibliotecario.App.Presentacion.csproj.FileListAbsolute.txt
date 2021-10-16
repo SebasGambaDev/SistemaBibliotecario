@@ -85,3 +85,6 @@
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/IdiomasLibro/DeleteIdiomas.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/IdiomasLibro/EditIdiomas.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/IdiomasLibro/ListIdiomas.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/TiposLibro/DeleteTiposLibro.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/TiposLibro/EditTiposLibro.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/TiposLibro/ListTiposLibro.cshtml.g.cs

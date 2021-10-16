@@ -1,0 +1,42 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.ListTiposLibroModel
+@{
+}
+
+
+<h1>Listado de tipos de libro en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./ListTiposLibro")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    @foreach (var tipoLibro in Model.tiposLibro)
+    {
+        <tr>
+            <td>@tipoLibro.id</td>
+            <td>@tipoLibro.tipoLibro_nombre</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditTiposLibro" asp-route-tipoLibroId="@tipoLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
+            </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./DeleteTiposLibro" asp-route-tipoLibroId="@tipoLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>  
+        </tr>
+    }
+</table>
+
+<a asp-page=".\EditTiposLibro" class="btn btn-primary">Agregar nuevo tipo de libro</a>
+
