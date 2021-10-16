@@ -1,0 +1,41 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.ListCategoriasLibroModel
+@{
+}
+
+
+<h1>Listado de categorias de libro en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./ListCategoriasLibro")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    @foreach (var categoriaLibro in Model.categoriasLibro)
+    {
+        <tr>
+            <td>@categoriaLibro.id</td>
+            <td>@categoriaLibro.catLibro_nombre</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditCategoriasLibro" asp-route-categoriaLibroId="@categoriaLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
+            </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./DeleteCategoriasLibro" asp-route-categoriaLibroId="@categoriaLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>  
+        </tr>
+    }
+</table>
+
+<a asp-page=".\EditCategoriasLibro" class="btn btn-primary">Agregar nuevo categoria de libro</a>

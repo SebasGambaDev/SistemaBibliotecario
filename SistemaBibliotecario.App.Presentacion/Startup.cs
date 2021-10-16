@@ -33,6 +33,7 @@ namespace SistemaBibliotecario.App.Presentacion
             services.AddTransient<IRepositorioAutor, RepositorioAutor>();
             services.AddTransient<IRepositorioIdiomaLibro, RepositorioIdiomaLibro>();
             services.AddTransient<IRepositorioTipoLibro, RepositorioTipoLibro>();
+            services.AddTransient<IRepositorioCategoriaLibro, RepositorioCategoriaLibro>();
             services.AddTransient<IRepositorioTurno, RepositorioTurno>();
             services.AddTransient<IRepositorioEditorial, RepositorioEditorial>();
             services.AddDbContext<SistemaBibliotecario.App.Persistencia.AppContext>();
