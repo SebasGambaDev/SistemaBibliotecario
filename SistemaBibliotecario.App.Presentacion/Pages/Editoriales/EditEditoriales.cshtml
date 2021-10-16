@@ -1,0 +1,19 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.EditEditorialesModel
+@{
+}
+
+<h2>Creacion o actualización del editorial @Model.editorial.edit_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="editorial.id" />    
+    
+    <div class="form-group">
+        <label asp-for="editorial.edit_nombre"></label>
+        <input asp-for="editorial.edit_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="editorial.edit_nombre"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListEditoriales" class="btn-default">Volver a la Lista de Editoriales... </a>

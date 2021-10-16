@@ -1,0 +1,20 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.DeleteEditorialesModel
+@{
+}
+<h2>Eliminar editorial @Model.editorial.edit_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="editorial.id" />
+    <div class="form-group">
+        Id en base de datos: @Model.editorial.id
+    </div>
+   
+    <div class="form-group">
+        Nombres: @Model.editorial.edit_nombre
+    </div>
+    
+    
+    <button type="submit" class="btn btn-success">Eliminar</button>    
+</form>
+
+<a asp-page="./ListEditoriales" class="btn-default">Volver a la Lista de editoriales... </a>

@@ -79,3 +79,6 @@
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Autores/DeleteAutores.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Autores/EditAutores.cshtml.g.cs
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Autores/ListAutores.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Editoriales/DeleteEditoriales.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Editoriales/EditEditoriales.cshtml.g.cs
+/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Presentacion/obj/Debug/net5.0/Razor/Pages/Editoriales/ListEditoriales.cshtml.g.cs
