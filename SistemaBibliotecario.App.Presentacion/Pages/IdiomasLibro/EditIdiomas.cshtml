@@ -1,0 +1,20 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.Pages.EditIdiomasModel
+@{
+}
+
+
+<h2>Creacion o actualización del idioma de libro @Model.idiomaLibro.idiomaLibro_nombre</h2>
+<form method="post">
+    <input type="hidden" asp-for="idiomaLibro.id" />    
+    
+    <div class="form-group">
+        <label asp-for="idiomaLibro.idiomaLibro_nombre"></label>
+        <input asp-for="idiomaLibro.idiomaLibro_nombre" class="form-control">
+        <span class="text-danger" asp-validation-for="idiomaLibro.idiomaLibro_nombre"></span>
+    </div>
+    
+    <button type="submit" class="btn btn-success">Guardar</button>    
+</form>
+
+<a asp-page="./ListIdiomas" class="btn-default">Volver a la Lista de Idiomas de libro... </a>

@@ -1,0 +1,44 @@
+﻿@page
+@model SitemaBibliotecario.App.Presentacion.ListIdiomasModel
+@{
+}
+
+
+<h1>Listado de idiomas de libro en el sistema</h1>
+<p>
+    @Html.ActionLink("Listar Todo", "./ListIdiomas")
+</p>
+
+@using (Html.BeginForm())
+{
+    <p>
+        Buscar x Nombre: @Html.TextBox("SearchString")  
+        <input type="submit" value="Search" />
+    </p>
+}
+
+<table class="table">
+    @foreach (var idiomaLibro in Model.idiomasLibro)
+    {
+        <tr>
+            <td>@idiomaLibro.id</td>
+            <td>@idiomaLibro.idiomaLibro_nombre</td>
+            
+            <td>
+                <a class="btn btn-primary table-btn" asp-page="./EditIdiomas" asp-route-idiomaLibroId="@idiomaLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                </a>
+            </td>
+           <td>
+                <a class="btn btn-danger table-btn" asp-page="./DeleteIdiomas" asp-route-idiomaLibroId="@idiomaLibro.id">
+                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                </a>
+            </td>  
+        </tr>
+    }
+</table>
+
+<a asp-page=".\EditIdiomas" class="btn btn-primary">Agregar nuevo idioma de libro</a>
+
+
+
