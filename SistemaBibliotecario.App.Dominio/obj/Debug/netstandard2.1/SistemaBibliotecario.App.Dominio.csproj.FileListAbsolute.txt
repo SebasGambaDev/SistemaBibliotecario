@@ -17,3 +17,13 @@ C:/proyectos_ciclo3/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/De
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/Debug/netstandard2.1/SistemaBibliotecario.App.Dominio.csproj.CoreCompileInputs.cache
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/Debug/netstandard2.1/SistemaBibliotecario.App.Dominio.dll
 /Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/obj/Debug/netstandard2.1/SistemaBibliotecario.App.Dominio.pdb
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\bin\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.deps.json
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\bin\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.dll
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\bin\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.pdb
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.csproj.AssemblyReference.cache
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.AssemblyInfoInputs.cache
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.AssemblyInfo.cs
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.csproj.CoreCompileInputs.cache
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.dll
+C:\Users\Nicolas\Documents\MinTic\Ciclo III\Programacion\SistemaBibliotecario\SistemaBibliotecario.App.Dominio\obj\Debug\netstandard2.1\SistemaBibliotecario.App.Dominio.pdb

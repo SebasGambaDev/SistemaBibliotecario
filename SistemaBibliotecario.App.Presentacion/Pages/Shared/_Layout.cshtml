@@ -8,46 +8,42 @@
     <link rel="stylesheet" href="~/css/site.css" />
 </head>
 <body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">SistemaBibliotecario.App.Presentacion</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
+    <div class="body-container">
+        <header class="header">
+        <nav class="navBar">
+            <div class="contenedor">
+                <div class="navegacion">
+                    <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
+                            <a asp-area="" asp-page="/Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a asp-area="" asp-page="/Privacy">Privacy</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Usuarios/list">Usuarios</a>
+                            <a asp-area="" asp-page="/Usuarios/list">Usuarios</a>
                         </li>
                        
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/TurnosBibliotecario/ListTurnBib">Turnos de bibliotecario</a>
+                            <a asp-area="" asp-page="/TurnosBibliotecario/ListTurnBib">Turnos de bibliotecario</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Libros/ListLibros">Libros</a>
+                            <a asp-area="" asp-page="/Libros/ListLibros">Libros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/TiposLibro/ListTiposLibro">Tipos de libro</a>
+                            <a asp-area="" asp-page="/TiposLibro/ListTiposLibro">Tipos de libro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/CategoriasLibro/ListCategoriasLibro">Categorias de libro</a>
+                            <a asp-area="" asp-page="/CategoriasLibro/ListCategoriasLibro">Categorias de libro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/IdiomasLibro/ListIdiomas">Idiomas de libro</a>
+                            <a asp-area="" asp-page="/IdiomasLibro/ListIdiomas">Idiomas de libro</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Autores/ListAutores">Autores</a>
+                            <a asp-area="" asp-page="/Autores/ListAutores">Autores</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Editoriales/ListEditoriales">Editoriales</a>
+                            <a asp-area="" asp-page="/Editoriales/ListEditoriales">Editoriales</a>
                         </li>
 
                     </ul>
@@ -55,18 +51,25 @@
             </div>
         </nav>
     </header>
-    <div class="container">
+    
+    
+    <div class="main">
+        <header class="main-header">
+            <h1>Libreria Distrital</h1>
+            <div class="logo"></div>
+        </header>
+
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
-        <div class="container">
+    </div>
+    <footer>
+        <div class="footer-content">
             &copy; 2021 - SistemaBibliotecario.App.Presentacion - <a asp-area="" asp-page="/Privacy">Privacy</a>
         </div>
     </footer>
-
+    
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
