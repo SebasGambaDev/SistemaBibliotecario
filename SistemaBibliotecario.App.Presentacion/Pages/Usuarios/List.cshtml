@@ -4,44 +4,53 @@
 @{
 }
 
-<h1>Listado de usuarios en el sistema</h1>
-<p>
+<h1 class="text-light">Listado de usuarios en el sistema</h1>
+<p class="text-light">
     @Html.ActionLink("Listar Todo", "./List")
 </p>
 
 @using (Html.BeginForm())
 {
     <p>
-        Buscar x Nombre: @Html.TextBox("SearchString")  
-        <input type="submit" value="Search" />
+        Buscar x Nombre: @Html.TextBox("SearchString")
+        <input class="btn btn-warning" type="submit" value="Search" />
     </p>
 }
 
-<table class="table">
+<table class="table table-dark table-hover">
     @foreach (var usuario in Model.usuarios)
     {
+        <tr>
+            <th>Id</th>
+            <th>Identificación</th>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Detalles</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
         <tr>
             <td>@usuario.id</td>
             <td>@usuario.usu_identificacion</td>
             <td>@usuario.usu_nombre</td>
             <td>@usuario.usu_apellido</td>
             <td>
-                <a class="btn btn-primary table-btn" asp-page="./Details" asp-route-usuarioId="@usuario.id">
-                  <i class="fas fa-info-circle fa-lg"></i>Detalle 
+                <a class="btn btn-secondary table-btn" asp-page="./Details" asp-route-usuarioId="@usuario.id">
+                    <i class="fas fa-info-circle fa-lg"></i>Detalle
                 </a>
             </td>
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./Edit" asp-route-usuarioId="@usuario.id">
-                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
                 </a>
             </td>
-           <td>
+            <td>
                 <a class="btn btn-danger table-btn" asp-page="./Delete" asp-route-usuarioId="@usuario.id">
-                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
                 </a>
-            </td>  
+            </td>
         </tr>
     }
 </table>
 
-<a asp-page=".\Edit" class="btn btn-primary">Agregar nuevo usuario</a>
+<a asp-page=".\Edit" class="btn btn-success">Agregar nuevo usuario</a>

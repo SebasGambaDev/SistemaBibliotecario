@@ -3,17 +3,18 @@
 @{
 }
 
-<h2>Creacion o actualización del idioma de libro @Model.tipoLibro.tipoLibro_nombre</h2>
+<h2 class="text-light">Creacion o actualización del idioma de libro <i
+        class="text-primary">@Model.tipoLibro.tipoLibro_nombre</i></h2>
 <form method="post">
-    <input type="hidden" asp-for="tipoLibro.id" />    
-    
-    <div class="form-group">
-        <label asp-for="tipoLibro.tipoLibro_nombre"></label>
+    <input type="hidden" asp-for="tipoLibro.id" />
+
+    <div class="form-group w-75">
+        <label class="text-secondary" asp-for="tipoLibro.tipoLibro_nombre">Tipo Libro</label>
         <input asp-for="tipoLibro.tipoLibro_nombre" class="form-control">
         <span class="text-danger" asp-validation-for="tipoLibro.tipoLibro_nombre"></span>
     </div>
-    
-    <button type="submit" class="btn btn-success">Guardar</button>    
+    <br>
+    <button type="submit" class="btn btn-success">Guardar</button>
 </form>
-
-<a asp-page="./ListTiposLibro" class="btn-default">Volver a la Lista de tipos de libro... </a>
+<br>
+<a asp-page="./ListTiposLibro" class="btn btn-secondary">Volver a la Lista de tipos de libro... </a>

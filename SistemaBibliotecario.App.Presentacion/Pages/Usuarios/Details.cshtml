@@ -3,28 +3,27 @@
 @{
 }
 
-<h2>Datos Detallados del usuario @Model.usuario.usu_nombre</h2>
-<div>
-    Id en base de datos: @Model.usuario.id
+<h2 class="text-light">Datos Detallados del usuario <i class="text-primary">@Model.usuario.usu_nombre</i></h2>
+<div class="text-light">
+    <strong>Id en base de datos:</strong> @Model.usuario.id
 </div>
-<div>
-    Identificación: @Model.usuario.usu_identificacion
+<div class="text-light">
+    <strong>Identificación:</strong> @Model.usuario.usu_identificacion
 </div>
-<div>
-    Nombres: @Model.usuario.usu_nombre
+<div class="text-light">
+    <strong>Nombres:</strong> @Model.usuario.usu_nombre
 </div>
-<div>
-    Apellidos: @Model.usuario.usu_apellido
+<div class="text-light">
+    <strong>Apellidos:</strong> @Model.usuario.usu_apellido
 </div>
-<div>
-    Telefono: @Model.usuario.usu_telefono
+<div class="text-light">
+    <strong>Telefono:</strong> @Model.usuario.usu_telefono
 </div>
-<div>
-    E-mail: @Model.usuario.usu_email
+<div class="text-light">
+    <strong>E-mail:</strong> @Model.usuario.usu_email
 </div>
-<div>
-    Dirección: @Model.usuario.usu_direccion
+<div class="text-light">
+    <strong>Dirección:</strong> @Model.usuario.usu_direccion
 </div>
-<a asp-page="./List" class="btn-default">Volver a la Lista de usuarios... </a>
-
-
+<br>
+<a asp-page="./List" class="btn btn-secondary">Volver a la Lista de usuarios... </a>

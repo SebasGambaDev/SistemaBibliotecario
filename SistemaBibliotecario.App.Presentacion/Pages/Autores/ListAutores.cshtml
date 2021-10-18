@@ -2,39 +2,45 @@
 @model SitemaBibliotecario.App.Presentacion.Pages.ListAutoresModel
 @{
 }
-<h1>Listado de autores en el sistema</h1>
-<p>
+<h1 class="text-light">Listado de autores en el sistema</h1>
+<p class="text-light">
     @Html.ActionLink("Listar Todo", "./ListAutores")
 </p>
 
 @using (Html.BeginForm())
 {
-    <p>
-        Buscar x Nombre: @Html.TextBox("SearchString")  
-        <input type="submit" value="Search" />
+    <p class="text-light">
+        Buscar x Nombre: @Html.TextBox("SearchString")
+        <input class="btn btn-warning" type="submit" value="Search" />
     </p>
 }
 
-<table class="table">
+<table class="table table-dark table-hover">
     @foreach (var autor in Model.autores)
     {
         <tr>
+            <th>Id</th>
+            <th>Nombre</th>
+            <th>Editar</th>
+            <th>Eliminar</th>
+        </tr>
+
+        <tr>
             <td>@autor.id</td>
             <td>@autor.aut_nombre</td>
-            
+
             <td>
                 <a class="btn btn-primary table-btn" asp-page="./EditAutores" asp-route-autorId="@autor.id">
-                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true">Editar</i>
                 </a>
             </td>
-           <td>
+            <td>
                 <a class="btn btn-danger table-btn" asp-page="./DeleteAutores" asp-route-autorId="@autor.id">
-                  <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
+                    <i class="fas fa-address-book fa-lg" aria-hidden="true">Eliminar</i>
                 </a>
-            </td>  
+            </td>
         </tr>
     }
 </table>
-
-<a asp-page=".\EditAutores" class="btn btn-primary">Agregar nuevo autor</a>
-
+<br>
+<a asp-page=".\EditAutores" class="btn btn-success">Agregar nuevo autor</a>

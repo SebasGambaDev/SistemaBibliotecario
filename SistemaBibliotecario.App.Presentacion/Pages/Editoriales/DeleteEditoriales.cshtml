@@ -3,19 +3,19 @@
 @{
 }
 
-<h2>Eliminar editorial @Model.editorial.edit_nombre</h2>
+<h2 class="text-light">Eliminar editorial <i class="text-primary">@Model.editorial.edit_nombre</i></h2>
 <form method="post">
     <input type="hidden" asp-for="editorial.id" />
-    <div class="form-group">
-        Id en base de datos: @Model.editorial.id
+    <div class="form-group text-light">
+        <strong>Id en base de datos:</strong> @Model.editorial.id
     </div>
-   
-    <div class="form-group">
-        Nombres: @Model.editorial.edit_nombre
-    </div>
-    
-    
-    <button type="submit" class="btn btn-success">Eliminar</button>    
-</form>
 
-<a asp-page="./ListEditoriales" class="btn-default">Volver a la Lista de editoriales... </a>
+    <div class="form-group text-light">
+        <strong>Nombres:</strong> @Model.editorial.edit_nombre
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-success">Eliminar</button>
+</form>
+<br>
+<a asp-page="./ListEditoriales" class="btn btn-secondary">Volver a la Lista de editoriales... </a>
