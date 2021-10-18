@@ -84,7 +84,7 @@ header.header{
 
 
 .contenedor{
-  padding: 8% 5% 0 5%;
+  padding: 8% 4% 0 4%;
 }
 
 .contenedor p{
@@ -135,7 +135,7 @@ header.header{
 
 .main{
   flex-grow: 1;
-  background-color: #434343;
+  background-color: #e9e9e9;
   
 }
 
