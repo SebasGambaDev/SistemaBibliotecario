@@ -7266,19 +7266,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Nicolas\\.nuget\\packages\\": {}
+    "/Users/juansebastiangambajacomussi/.nuget/packages/": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Persistencia\\SistemaBibliotecario.App.Persistencia.csproj",
+      "projectUniqueName": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj",
       "projectName": "SistemaBibliotecario.App.Persistencia",
-      "projectPath": "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Persistencia\\SistemaBibliotecario.App.Persistencia.csproj",
-      "packagesPath": "C:\\Users\\Nicolas\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Persistencia\\obj\\",
+      "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Persistencia/SistemaBibliotecario.App.Persistencia.csproj",
+      "packagesPath": "/Users/juansebastiangambajacomussi/.nuget/packages/",
+      "outputPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Persistencia/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\Nicolas\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "/Users/juansebastiangambajacomussi/.nuget/NuGet/NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netstandard2.1"
@@ -7290,8 +7290,8 @@
         "netstandard2.1": {
           "targetAlias": "netstandard2.1",
           "projectReferences": {
-            "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj": {
-              "projectPath": "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj"
+            "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj": {
+              "projectPath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj"
             }
           }
         }
@@ -7342,7 +7342,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.401\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/5.0.401/RuntimeIdentifierGraph.json"
       }
     }
   }

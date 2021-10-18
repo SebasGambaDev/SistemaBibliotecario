@@ -1,10 +1,10 @@
 {
   "version": 2,
-  "dgSpecHash": "xP0hl8iwY4xkkPSBvUclkoHq6w+glV+03M4Q17Bpwj6Zg8KP1et99m2IGfgiJP8LcJ3lB9gu80Uu7i1woelFuQ==",
+  "dgSpecHash": "Rgrnp9OEEIkfgDiPZXBGvSWgRDpVWmkcf14/Gq8h5mJxxj/zafyAcLagoITZPv0OGMnJQb+VgKjPNINa3SAJZQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nicolas\\Documents\\MinTic\\Ciclo III\\Programacion\\SistemaBibliotecario\\SistemaBibliotecario.App.Dominio\\SistemaBibliotecario.App.Dominio.csproj",
+  "projectFilePath": "/Users/juansebastiangambajacomussi/Documents/programacion/misiontic-retos/ciclo-3/proyecto/SistemaBibliotecario/SistemaBibliotecario.App.Dominio/SistemaBibliotecario.App.Dominio.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\Nicolas\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+    "/Users/juansebastiangambajacomussi/.nuget/packages/system.componentmodel.annotations/5.0.0/system.componentmodel.annotations.5.0.0.nupkg.sha512"
   ],
   "logs": []
 }
