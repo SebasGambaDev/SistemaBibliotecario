@@ -1,0 +1,1 @@
+BACKUP DATABASE [SistemaBibliotecario.Data] TO  DISK = N'/var/opt/mssql/data/SistemaBibliotecario.Data-20211018-5-43-50.bak' WITH NOFORMAT, NOINIT,  NAME = N'SistemaBibliotecario.Data-Copy', NOSKIP, REWIND, NOUNLOAD,  STATS = 10
