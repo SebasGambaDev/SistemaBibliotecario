@@ -3,19 +3,19 @@
 @{
 }
 
-<h2>Eliminar idioma de libro @Model.tipoLibro.tipoLibro_nombre</h2>
+<h2 class="text-light">Eliminar idioma de libro <i class="text-primary">@Model.tipoLibro.tipoLibro_nombre</i></h2>
 <form method="post">
     <input type="hidden" asp-for="tipoLibro.id" />
-    <div class="form-group">
-        Id en base de datos: @Model.tipoLibro.id
+    <div class="form-group text-light">
+        <strong>Id en base de datos:</strong> @Model.tipoLibro.id
     </div>
-   
-    <div class="form-group">
-        Nombres: @Model.tipoLibro.tipoLibro_nombre
-    </div>
-    
-    
-    <button type="submit" class="btn btn-success">Eliminar</button>    
-</form>
 
-<a asp-page="./ListTiposLibro" class="btn-default">Volver a la Lista de tipos de Libro... </a>
+    <div class="form-group text-light">
+        <strong>Nombres:</strong> @Model.tipoLibro.tipoLibro_nombre
+    </div>
+
+    <br>
+    <button type="submit" class="btn btn-success">Eliminar</button>
+</form>
+<br>
+<a asp-page="./ListTiposLibro" class="btn btn-secondary">Volver a la Lista de tipos de Libro... </a>

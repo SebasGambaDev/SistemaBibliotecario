@@ -3,45 +3,46 @@
 @{
 }
 
-<h2>Datos Detallados del libro @Model.libro.lib_titulo</h2>
+<h2 class="text-light">Datos Detallados del libro <i class="text-primary">@Model.libro.lib_titulo</i></h2>
 <form method="post">
     <input type="hidden" asp-for="libro.id" />
-    <div class="form-group">
-        Id en base de datos: @Model.libro.id
+    <div class="form-group text-light">
+        <strong>Id en base de datos:</strong> @Model.libro.id
     </div>
-    <div class="form-group">
-        Titulo: @Model.libro.lib_titulo
+    <div class="form-group text-light">
+        <strong>Titulo:</strong> @Model.libro.lib_titulo
     </div>
-    <div class="form-group">
-        ISBN: @Model.libro.lib_isbn
+    <div class="form-group text-light">
+        <strong>ISBN:</strong> @Model.libro.lib_isbn
     </div>
-    <div class="form-group">
-        Sinopsis: @Model.libro.lib_sinopsis
+    <div class="form-group text-light">
+        <strong>Sinopsis:</strong> @Model.libro.lib_sinopsis
     </div>
-    <div class="form-group">
-        Numero de capitulos: @Model.libro.lib_numCapt
+    <div class="form-group text-light">
+        <strong>Numero de capitulos:</strong> @Model.libro.lib_numCapt
     </div>
-    <div class="form-group">
-        Numero de páginas: @Model.libro.lib_numPag
+    <div class="form-group text-light">
+        <strong>Numero de páginas:</strong> @Model.libro.lib_numPag
     </div>
-    <div class="form-group">
-        Tipo de libro: @Model.libro.lib_tipoLibroid
+    <div class="form-group text-light">
+        <strong>Tipo de libro:</strong> @Model.libro.lib_tipoLibroid
     </div>
-    <div class="form-group">
-        Idioma: @Model.libro.lib_idioLibroid
+    <div class="form-group text-light">
+        <strong>Idioma:</strong> @Model.libro.lib_idioLibroid
     </div>
-    <div class="form-group">
-        Categoria: @Model.libro.lib_catLibroid
+    <div class="form-group text-light">
+        <strong>Categoria:</strong> @Model.libro.lib_catLibroid
     </div>
-    <div class="form-group">
-        Autor: @Model.libro.lib_autid
+    <div class="form-group text-light">
+        <strong>Autor:</strong> @Model.libro.lib_autid
     </div>
-    <div class="form-group">
-        Editorial: @Model.libro.lib_editid
+    <div class="form-group text-light">
+        <strong>Editorial:</strong> @Model.libro.lib_editid
     </div>
-    
+    <br>
     <button type="submit" class="btn btn-success">Eliminar</button>
 </form>  
-<a asp-page="./ListLibros" class="btn-default">Volver a la Lista de libros... </a>
+<br>
+<a asp-page="./ListLibros" class="btn btn-secondary">Volver a la Lista de libros... </a>
 
 

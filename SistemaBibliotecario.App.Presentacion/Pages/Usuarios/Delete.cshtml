@@ -4,32 +4,34 @@
     int usuarioId = Model.usuario.id;
 }
 
-<h2>Eliminar usuario @Model.usuario.usu_nombre</h2>
+<h2 class="text-light">Eliminar usuario <i class="text-primary">@Model.usuario.usu_nombre</i></h2>
 <form method="post">
     <input type="hidden" asp-for="usuario.id" />
-    <div class="form-group">
-        Id en base de datos: @Model.usuario.id
+    <div class="form-group text-light">
+        <strong> Id en base de datos:</strong> @Model.usuario.id
     </div>
-    <div class="form-group">
-        Identificación: @Model.usuario.usu_identificacion
+    <div class="form-group text-light">
+        <strong>Identificación:</strong> @Model.usuario.usu_identificacion
     </div>
-    <div class="form-group">
-        Nombres: @Model.usuario.usu_nombre
+    <div class="form-group text-light">
+        <strong>Nombres:</strong> @Model.usuario.usu_nombre
     </div>
-    <div class="form-group">
-        Apellidos: @Model.usuario.usu_apellido
+    <div class="form-group text-light">
+        <strong>Apellidos:</strong> @Model.usuario.usu_apellido
     </div>
-    <div class="form-group">
-        Telefono: @Model.usuario.usu_telefono
+    <div class="form-group text-light">
+        <strong>Telefono:</strong> @Model.usuario.usu_telefono
     </div>
-    <div class="form-group">
-        E-mail: @Model.usuario.usu_email
+    <div class="form-group text-light">
+        <strong>E-mail:</strong> @Model.usuario.usu_email
     </div>
-    <div class="form-group">
-        Dirección: @Model.usuario.usu_direccion
+    <div class="form-group text-light">
+        <strong>Dirección:</strong> @Model.usuario.usu_direccion
     </div>    
     
-    <button type="submit" class="btn btn-success">Eliminar</button>    
+    <br>
+    <button type="submit" class="btn btn-danger">Eliminar</button>    
 </form>
+<br>
+<a asp-page="./List" class="btn btn-secondary">Volver a la Lista de usuarios... </a>
 
-<a asp-page="./List" class="btn-default">Volver a la Lista de usuarios... </a>

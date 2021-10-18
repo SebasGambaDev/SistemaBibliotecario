@@ -4,17 +4,19 @@
 }
 
 
-<h2>Creacion o actualización del idioma de libro @Model.idiomaLibro.idiomaLibro_nombre</h2>
+
+<h2 class="text-light">Creacion o actualización del idioma de libro <i
+        class="text-primary">@Model.idiomaLibro.idiomaLibro_nombre</i></h2>
 <form method="post">
-    <input type="hidden" asp-for="idiomaLibro.id" />    
-    
-    <div class="form-group">
-        <label asp-for="idiomaLibro.idiomaLibro_nombre"></label>
+    <input type="hidden" asp-for="idiomaLibro.id" />
+
+    <div class="form-group w-75">
+        <label class="text-secondary" asp-for="idiomaLibro.idiomaLibro_nombre">Idioma</label>
         <input asp-for="idiomaLibro.idiomaLibro_nombre" class="form-control">
         <span class="text-danger" asp-validation-for="idiomaLibro.idiomaLibro_nombre"></span>
     </div>
-    
-    <button type="submit" class="btn btn-success">Guardar</button>    
+    <br>
+    <button type="submit" class="btn btn-success">Guardar</button>
 </form>
-
-<a asp-page="./ListIdiomas" class="btn-default">Volver a la Lista de Idiomas de libro... </a>
+<br>
+<a asp-page="./ListIdiomas" class="btn btn-secondary">Volver a la Lista de Idiomas de libro... </a>

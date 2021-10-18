@@ -3,18 +3,18 @@
 @{
 }
 
-<h2>Eliminar turno @Model.turno.turn_nombre</h2>
+<h2 class="text-light">Eliminar turno <i class="text-primary">@Model.turno.turn_nombre</i></h2>
 <form method="post">
     <input type="hidden" asp-for="turno.id" />
-    <div class="form-group">
-        Id en base de datos: @Model.turno.id
+    <div class="form-group text-light">
+        <strong>Id en base de datos:</strong> @Model.turno.id
     </div>
-    
-    <div class="form-group">
-        Nombres: @Model.turno.turn_nombre
-    </div>
-    
-    <button type="submit" class="btn btn-success">Eliminar</button>    
-</form>
 
-<a asp-page="./ListTurnBib" class="btn-default">Volver a la Lista de turnos... </a>
+    <div class="form-group text-light">
+        <strong>Nombres:</strong> @Model.turno.turn_nombre
+    </div>
+    <br>
+    <button type="submit" class="btn btn-success">Eliminar</button>
+</form>
+<br>
+<a asp-page="./ListTurnBib" class="btn btn-secondary">Volver a la Lista de turnos... </a>
